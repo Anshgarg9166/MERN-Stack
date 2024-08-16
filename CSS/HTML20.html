@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border:1px solid black;
+            margin: 2px;
+            padding:2px;
+            display: flex;
+            /* by default flex direction is row*/
+            /*flex-direction: column;*/
+            /* flex-direction: column-reverse;*/
+            height:500px;
+            /*flex-wrap: wrap ;*/
+            /* justify-content: space-between;*/
+            /*space-around is used to give same space on both left and right side*/ 
+            /* space-evenly is used to give same space on left and right betwwen to 2 boxes */
+            justify-content:start;
+            align-content: start;
+            /* align-content: start; is usedd to remove the spacing*/
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border:1px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+            order:500;
+            /*flex-shrink: 4;*/
+            /*flex-grow: 5;*/
+        }
+        #box2{
+            background-color: blue;
+            align-self: end;
+        }
+        #box3{
+            background-color: aquamarine;
+            order:-1;
+            /*flex-basis: 300px;*/
+            align-self: center;
+        }
+        #box4{
+            background-color: blanchedalmond;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+    </div>
+</body>
+</html>

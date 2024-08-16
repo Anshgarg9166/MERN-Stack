@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:black 2px solid
+        }
+        img{
+            margin:10px;
+        }
+        .image2{
+            /*position: relative;
+            top:100px*/
+            position:absolute;
+            top: 200px;
+        }
+        .container{
+            position:relative;
+            height: 800px;
+        }
+        .image4{
+            position: fixed;
+        }
+        .image3{
+            position: sticky;
+            top:50px;
+        }
+        .box{
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="p2.jpg" alt="Image2" width="200px" height="200px" class="image1">
+        <img src="p1.jpg" alt="Image1" width="200px" height="200px" class="image2">
+        <img src="p3.jpg" alt="Image3" width="200px" height="200px" class="image3">
+        <img src="p4.jpg" alt="Image4" width="200px" height="200px" class="image4">
+    </div>
+    <div class="box"></div>
+</body>
+</html>

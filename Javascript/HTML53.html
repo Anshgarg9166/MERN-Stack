@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="fpara">Hello jee</p>
+    </div>
+    <script>
+
+        function changeText(){
+            let fpara= document.getElementById('fpara');
+            fpara.textContent = "Hello Ansh"
+        }
+        let fpara= document.getElementById('fpara');
+        fpara.addEventListener('click',changeText);
+    </script>
+</body>
+</html>

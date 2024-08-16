@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DevChallenge Sandbox</title>
+  <meta charset="UTF-8" />
+  <!-- DO NOT import fonts here. Instead, use the 
+  @import directive in the styles.css file. -->
+</head>
+
+<body>
+ <div class="container">
+  <div class="card">
+    <div class="box1">
+      <div class="heading">Upskill your Frontend skills</div>
+      <div class="description">Scan this QR code to improve your coding skills!</div>
+    </div>
+    <div class="box2">
+      <img src="https://th.bing.com/th/id/OIP.ZFt9Ib6ypFgdYK14UxUAhwHaHa?w=171&h=180&c=7&r=0&o=5&pid=1.7" id="img">
+    </div>
+  </div>
+ </div>
+</body>
+
+</html>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width:100vw;
+    background-image: linear-gradient(62deg, #bfcede 0%, #ffffff 99%, #E0C3FC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    border:white 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.box1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap:15px;
+    }
+.box2{
+    width: 50%;
+    margin: 15px;
+    margin-left: 0px;;
+    border:white 2px solid;
+    border-radius: 20px;
+    background-color: rgb(245, 174, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#img{
+    height: 60%;
+    transition: all 2s linear 1s;
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.description{
+    color: #777;
+    font-size: 1.1rem;
+}
+#img:hover{
+    height: 90%;
+}

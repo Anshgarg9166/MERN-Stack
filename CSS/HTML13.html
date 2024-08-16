@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style13.css">
+    <!-- internal css -->
+    <!-- here we can use !important to make internal css appear -->
+    <style>
+        p{
+            background-color: blueviolet;
+            
+        }
+        h1{
+            color: green
+        }
+        #article{
+            color: bisque ;
+        }
+        /* comma is used for group selector*/
+        p,article{
+            width:500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <!-- Preference of inline css is more than internal css and external css-->
+     <!-- inline > internal = external(based on order of decleartio)  -->
+    <!-- inline css -->
+    <p style="background-color: aqua;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, aliquam beatae amet animi impedit vero placeat voluptates id architecto rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, explicabo enim atque deserunt consequatur quam praesentium porro vero doloremque distinctio ipsa rem reiciendis nulla consequuntur quas alias corporis animi dolores?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus doloremque a beatae explicabo libero magnam reiciendis illum rerum nobis laborum, error voluptate magni pariatur incidunt molestiae nihil aperiam aut alias doloribus. Illo, natus iste voluptates amet a id culpa ab magni provident porro rem autem modi, rerum, voluptate harum!</p>
+    <article id="article1" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, omnis.</article>
+</body>
+</html>

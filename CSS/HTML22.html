@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:350px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border:2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /*custom vairable creation*/
+            /* only valid in box part only to use in whole code we define these in root*/
+            --primary-color:brown;
+            --custom-width:350px;
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 350px;
+            border:1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /*box-shadow: 15px 15px brown;*/
+            /*box-shadow: 15px 15px 5px brown;*/
+            /*box-shadow: 15px 15px 5px 20px brown;*/
+            /*box-shadow: 15px 15px 5px 20px rgba(0, 10, 0,0.7);*/
+            /*box-shadow:inset 15px 15px 5px brown;*/
+            box-shadow: 15px 15px brown,20px 20px black;
+        }
+        #head1{
+            /*text-shadow: 3px 3px 1px white;*/
+            /*text-shadow: yellow 3px 3px 1px ;*/
+            /*text-shadow: yellow 3px 3px; */
+            text-shadow: 3px 3px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="p1.jpg" alt="">
+            <h2 id="head1">Welcome</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil neque dolorum culpa! Accusantium, expedita fugiat quam suscipit mollitia temporibus delectus?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agarwal Bhojanalaya</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #navlist{
+            list-style: none;
+            font-size: 2rem;
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            overflow-x: none;
+            background-color: #bfcede;
+            background-image: linear-gradient(62deg, #bfcede 0%, #ffffff 99%, #E0C3FC 100%);
+
+        }
+        .navcontainer{
+            width:100vw;
+            /*background-color: rgb(219, 58, 90);*/
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        }
+        nav{
+            width:100%;
+            overflow-x: none;
+            padding-right: 2rem;
+        }
+        #brandname{
+            font-size: 2.8rem;
+            color: azure;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        #navitems{ 
+            display:flex;
+            gap: 40px;
+        }
+        .footerbox{
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            width:100vw;
+            text-align: center;
+            min-height: 40px;
+            
+        }
+        .footerbox p{
+            color: azure;
+            font-size: 2rem;
+        }
+        .contentbox{
+            height: 100%;
+            width:70%;
+            margin: auto;
+            /*border:2px solid black;*/
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            /*gap:100px;*/
+            padding: 2rem;
+            box-shadow:0px 0px 30px black;
+            justify-content: space-around;
+
+        }
+        .item{
+            display: flex;
+            justify-content: space-around;
+        }
+        .rightbox{
+            position: relative;
+            overflow:hidden;
+            transition:all 0.3s linear 0s;
+            box-shadow: 1px 1px 10px;
+            border-radius: 20px;
+        }
+        .rightbox img{
+            height: 100%;
+            border-radius: 20px;
+            transition: all 0.6s 0s;
+        }
+        .rightbox:hover{
+            transform: scale(1.2);
+        }
+        .rightbox .overlay{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            width:100%;
+            border-radius:20px;
+            background-color: rgba(80, 75, 75, 0.808);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.3s linear 0s;
+
+        }
+        .rightbox .overlay span{
+            color: white;
+            font-size: 1.2rem;
+        }
+        .rightbox:hover .overlay{
+            opacity: 1;
+        }
+        .leftbox{
+            display:flex;
+            flex-direction: column;
+            gap:20px;
+        }
+        .leftbox h2{
+            font-size: 2rem;
+        }
+        .ingbox{
+            font-size: 1.3rem;
+        }
+        .recipebox{
+            font-size: 1.1rem;
+        }
+        main{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navlist">
+                        <li>
+                            <p id="brandname">Agarwal Bhojanalaya</p>
+                        </li>
+                        <li >
+                            <div id="navitems">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="#">About us</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+       <main>
+        <div class="contentbox">
+            <section>
+                <div class="item">
+                    <div class="leftbox">
+                        <h2>Gulab Jamun</h2>
+                        <div>
+                            <h3>Ingredients</h3>
+                        <ul class="ingbox">
+                            <li>Sugar</li>
+                            <li>Bread</li>
+                            <li>OIl</li>
+                        </ul>
+                        </div>
+                        
+                        <div>
+                            <h3>Recipe</h3>
+                        <ol  class="recipebox">
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, recusandae?</li>
+                        </ol>
+                        </div>
+                        
+                    </div>
+                    <div class="rightbox">
+                        <img src="Gulab Jamun.png" alt="">
+                        <div class="overlay">
+                            <span>Click here to buy</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="item"> 
+                    <div class="leftbox">
+                        <h2>Barfi</h2>
+                        <div>
+                            <h3>Ingredients</h3>
+                        <ul>
+                            <li>Sugar</li>
+                            <li>Bread</li>
+                            <li>OIl</li>
+                        </ul>
+                        </div>
+                        
+                        <div>
+                            <h3>Recipe</h3>
+                        <ol>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, recusandae?</li>
+                        </ol>
+                        </div>
+                        
+                    </div>
+                    <div class="rightbox">
+                    <img src="barfi.jpg" alt="">
+                    <div class="overlay">
+                        <span>Click here to buy</span>
+                    </div>
+                    </div>
+                </div>
+            </section>
+                
+        </div>
+       </main>
+        <footer>
+            <div class="footerbox">
+                <p>Copyright &copy; Agarwal Bhojanalaya Pvt Ltd 2024 All Right Reseerved</p>
+            </div>
+        </footer>
+        
+
+        </div>
+    </div>
+</body>
+</html>
