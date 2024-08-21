@@ -13,3 +13,4 @@ const storage = multer.diskStorage({
 export const upload = multer({ 
     storage, 
 })
+// It is used to save the file temporary locally
